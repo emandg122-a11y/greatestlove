@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6f91, #ff9671);
+      color: white;
+      padding: 2rem;
+      border-bottom-left-radius: 40% 10%;
+      border-bottom-right-radius: 40% 10%;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .counter {
+      margin: 2rem auto;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff6f91;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .button {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #ff6f91;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #ff3d6b;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #ff9671;
+      color: white;
+    }
+    /* Popup */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    #popup .content {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>  <header>
+    <h1>HAPPY BIRTHDAY🥳</h1>
+    <p>MY GREATEST LOVE</p>
+  </header>  <div class="counter">
+    Its almost 3months since our last date, <span id="dayscount"></span> 75days to be exact 
+  </div>  <div class="gallery">
+    <img src="https://i.ibb.co/fzjL89G1/Green-Gradient-Minimalist-Simple-Instagram-Profile-Picture-20250920-215927-0000.jpg" alt="MEMORY #1" border="0"></a>  "Our Memory 1"
+    <img src="https://i.ibb.co/nM7BqXzm/Green-Gradient-Minimalist-Simple-Instagram-Profile-Picture-20250920-220621-0000.png" alt="MEMORY #2" border="0"></a>  "Our Memory 4"
+    <img src="https://i.ibb.co/DH6CWRnT/Green-Gradient-Minimalist-Simple-Instagram-Profile-Picture-20250920-220335-0000.png" alt="MEMORY #3" border="0"></a>  "Our Memory 3"
+  </div>  <div>
+    <div class="button" onclick="openPopup()">LETTER FOR YOU</div>
+  </div>  <div id="popup">
+    <div class="content">
+      <h2>To NETOY ❤️</h2>
+      <p> happy birthday vy. i know hindi neto mapapasaya ang birthday mo baka nga mainis kapa pero yun lang gusto ko lang mag paabot ng bati at pasasalamat sa mga nagawa mo para sakin i still love u vy and umaasa padin ako sa muling pag aayos natin wala namang masamangumasa dba ano ba to hindi to letter para mag beg letter to para sa pag bati ko e at malaman mo na masaya ako na masaya ka. na nag aantay padin ako na muling mahalin mo andaming nag bago simula nung nawala ka and ayoko non nabago ko ang sarili ko para sayo pero andami ding nag bago simula nung nawala ka. umaasa padin ako sa pag babalik mo andito padin si nemo nag aantay na muling mapasayo iloveyou lalove always hindi mag babago pasensya kana kung d ako makaattend sa mismong kaarawan mo pasensya kana kung hanggang ngayon wala padin akong effort na puntahan ka alam mo naman yung rason bat d ako pumunta sana maintindihan mo sorry again happy happy birthday lalove ingatan mo sarili mo palagi wag mong pababayaan para sa muling pag babalik ko e buo kapa din nag bago nako vy at nag babago pa. para sa muli nating pag tatagpo e mapatunayan kong kinaya ko kase mahal kita.. 💌 
+        <footer>
+    <p>Made By NeMO ❤️ just for you</p>
+  </footer>  <script>
+    // Love counter (days since a date)
+    const startDate = new Date("2022-02-14"); // Change to your start date
+    const today = new Date();
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("daysCount").innerText = diffDays;
+
+    // Popup functions
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script></body>
+</html>
